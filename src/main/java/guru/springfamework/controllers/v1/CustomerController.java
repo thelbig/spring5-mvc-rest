@@ -53,7 +53,7 @@ public class CustomerController {
     }
 
     @DeleteMapping({"/{id}"})
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteCustomer(@PathVariable Long id){
         customerService.deleteCustomerById(id);
     }
